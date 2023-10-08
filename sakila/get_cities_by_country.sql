@@ -1,3 +1,4 @@
+use sakila;
 DROP PROCEDURE  IF EXISTS  get_cities_by_country;
 DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `get_cities_by_country`(OUT city_count INT , acity_id int , out random_value numeric(10,8))

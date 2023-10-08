@@ -1,3 +1,4 @@
+use sakila;
 drop procedure if exists get_inventory_by_movie;
 DELIMITER $$
 create procedure get_inventory_by_movie(out movie_count int , amovie_id int , out random_value numeric(10,8))

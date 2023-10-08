@@ -1,3 +1,4 @@
+use sakila;
 drop procedure if exists get_store_addresses;
 DELIMITER $$
 create procedure get_store_addresses(out store_count int , astore_id int , out random_value numeric(10,8))
