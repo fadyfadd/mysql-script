@@ -1,7 +1,7 @@
 use sakila;
-drop procedure if exists get_inventory_by_movie;
+drop procedure if exists get_inventory_by_film;
 DELIMITER $$
-create procedure get_inventory_by_movie(out movie_count int , amovie_id int , out random_value numeric(10,8))
+create procedure get_inventory_by_film(out movie_count int , amovie_id int , out random_value numeric(10,8))
 begin
 		  set random_value = rand();
 		  SELECT COUNT(*)
